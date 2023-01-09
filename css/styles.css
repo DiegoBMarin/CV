@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap');
+
+body,
+html{
+	font-family: 'Inter', sans-serif;
+	color: #333333;
+}
+
+h1{ font-size: 72px; 
+	font-weight: bold;
+}
+h2{ 
+	font-size: 38px;
+	font-weight: bold; 
+	position: relative;
+	    margin-bottom: 30px;
+}
+h2:before {
+    content: '';
+    background: #333333;
+    width: 52px;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+}
+h3{ 
+	font-size: 28px; 
+	font-weight: bold;
+}
+h4{ font-size: 26px; }
+
+p{ font-size: 16px; }
+
+span{ font-size: 16px; }
+
+section ul {
+    list-style: none;
+}
+
+section li {
+    position: relative;
+}
+
+section li:before {
+    content: '\2022';
+    color: #fff59d;
+    position: absolute;
+    left: -20px;
+    top: -8px;
+    font-size: x-large;
+}
+
+/* Variables */
+:root{
+	--yellow: #FFF59D;
+}
+
+a.navbar-brand {
+    font-weight: bold;
+}
+
+.hero-banner {
+	background: var(--yellow);
+	min-height: 560px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.hero-banner span{
+	font-weight: bold;
+}
+
+.hero-banner_logo{
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+}
+
+.container-main {
+    width: auto;
+    max-width: 800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.contact-section{
+	background: var(--yellow);
+}
+
+#form-contact label{
+	display: none;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 0;
+}
+
+button.btn {
+    background: #fff59d;
+    border-radius: 0;
+    border: 1px solid #333333;
+}
+
+.progress-bar{
+	background: var(--yellow);
+}
+
+#experience .col-md-8 h3,
+#experience .col-md-8 p{
+	margin-bottom: 0px;
+}
+
+#education .col-md-7 p{
+	margin-bottom: 0px;
+}

@@ -6,14 +6,14 @@ html{
 	color: #333333;
 }
 
-h1{ font-size: 72px; 
+h1{ font-size: 92px; 
 	font-weight: bold;
 }
 h2{ 
 	font-size: 38px;
 	font-weight: bold; 
 	position: relative;
-	    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 h2:before {
     content: '';
@@ -72,14 +72,14 @@ a.navbar-brand {
 }
 
 .hero-banner_logo{
-	max-width: 600px;
+	max-width: 392px;
 	width: 100%;
 	height: auto;
 }
 
 .container-main {
     width: auto;
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -114,4 +114,30 @@ button.btn {
 
 #education .col-md-7 p{
 	margin-bottom: 0px;
+}
+
+@media(max-width: 769px){
+	.hero-banner {
+	    min-height: 460px;
+	}
+	h1 {
+	    font-size: 55px;
+	    font-weight: bold;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	.hero-banner_logo{
+		max-width: 222px;
+		margin-bottom: 40px;
+	}
+	.hero-banner .col-md-7{
+		order: 1;
+	}
+	.hero-banner .col-md-5{
+		order: 0;
+	}
 }
